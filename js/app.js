@@ -56,6 +56,10 @@ var TokyocookiesPerHrArr= [];
 for (var i=0;i<hours.length;i++){
     TokyocookiesPerHrArr.push(hours[i],Tokyocookies.cookiesPerHr())
 }
+var TokyoTotal=0;
+    for (i=0;i<hours.length;i+1){
+     TokyoTotal =TokyoTotal+TokyocookiesPerHrArr[i]
+    }
 document.write(TokyocookiesPerHrArr);
 //Dubai
 var DubaiCookies={
@@ -78,6 +82,10 @@ var DubaicookiesPerHrArr= [];
 for (var i=0;i<hours.length;i++){
     DubaicookiesPerHrArr.push(hours[i],DubaiCookies.cookiesPerHr())
 }
+var DubaiTotal=0;
+    for (i=0;i<hours.length;i+1){
+        DubaiTotal =DubaiTotal+DubaicookiesPerHrArr[i]
+    }
 document.write(DubaicookiesPerHrArr);
 //Paris
 var ParisCookies={
@@ -100,6 +108,10 @@ var PariscookiesPerHrArr= [];
 for (var i=0;i<hours.length;i++){
     PariscookiesPerHrArr.push(hours[i],ParisCookies.cookiesPerHr())
 }
+var ParisTotal=0;
+    for (i=0;i<hours.length;i+1){
+        ParisTotal =ParisTotal+PariscookiesPerHrArr[i]
+    }
 document.write(PariscookiesPerHrArr);
 //Lima
 var LimaCookies={
@@ -122,4 +134,8 @@ var LimacookiesPerHrArr= [];
 for (var i=0;i<hours.length;i++){
     LimacookiesPerHrArr.push(hours[i],LimaCookies.cookiesPerHr())
 }
+var LimaTotal=0;
+    for (i=0;i<hours.length;i+1){
+        LimaTotal =LimaTotal+LimacookiesPerHrArr[i]
+    }
 document.write(LimacookiesPerHrArr);
