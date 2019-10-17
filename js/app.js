@@ -147,11 +147,12 @@ function submitHandler(event) {
     console.log(newShop);
 
     shop.push(newShop);
-    dataRowFunction(table);
+   // dataRowFunction(table);
     console.log(newShop);
     table.removeChild(footerRow);
-    footerRowFunction();
+   
     dataRowFunction();
+    footerRowFunction();
     
 
 }
