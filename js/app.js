@@ -96,6 +96,7 @@ function dataRowFunction() {
 }
 
 
+
 //footer Row
 function footerRowFunction() {
 
@@ -130,7 +131,33 @@ dataRowFunction(table);
 footerRowFunction(table);
 
 
+
+
+function renderNewRow() {
+    var tr = document.createElement('tr');
+    table.appendChild(tr);
+    var td = document.createElement('td');
+    tr.appendChild(td);
+    var currentShop =shop[shop.length-1];
+    console.log(currentShop);
+    td.textContent = currentShop.location;
+    //
+    for (var cellIndex = 0; cellIndex < hours.length; cellIndex++) {
+        var data = document.createElement('td');
+        tr.appendChild(data);
+        data.textContent = currentShop.hourlySales[cellIndex];
+
+    }
+      // totaly daily sales
+     var td = document.createElement('td');
+      tr.appendChild(td);
+      td.textContent = currentShop.dailySales;
+  }
+
+
+
 /////////////////Form//////////////////////
+
 
 
 
@@ -144,16 +171,18 @@ function submitHandler(event) {
     var avg = parseFloat(event.target.avg.value);
 
     var newShop = new Shops(location, min, max, avg);
-    console.log(newShop);
+    //console.log(newShop);
 
     shop.push(newShop);
-   // dataRowFunction(table);
-    console.log(newShop);
+    // dataRowFunction(table);
+    // console.log(newShop);
     table.removeChild(footerRow);
-   
-    dataRowFunction();
+
+    // dataRowFunction();
+
+    renderNewRow();
     footerRowFunction();
-    
+
 
 }
 
