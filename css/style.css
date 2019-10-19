@@ -3,3 +3,89 @@ header{
     text-align: center;
     font-size: 100px;
 }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+   
+  h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 10%;
+    padding: 1%;
+    border:2px black;
+    color: rgb(250,128,114);
+    background-color: aquamarine;
+  }
+  p{
+      text-align: center;
+      font-size: 50px;}
+
+   .index1 {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        font-size: 30px;
+     
+      }
+
+      nav li {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        font-size: 30px;
+     
+      }
+      .loc-list{
+        text-align:left;
+        font-family: cursive;
+        font-size: 25px;
+
+      }
+      .plocation{
+        font-family: cursive;
+        color: red; 
+      }
+       
+      .giftp{
+        font-family: initial;
+        color: brown;   
+          
+      }
+     .giftimg{
+        display:inline;
+        width: 25%;
+        margin-left: 6%;
+     }
+    .aboutp{
+        font-size: 25px;
+        font-family: sans-serif;
+        color: rgb(59, 39, 39); 
+        text-align: left;
+    }
+    #submit {
+        height: 50px;
+        width: 150px;
+        background-color:black;
+        color: white;
+        font-family: verdana;
+      }
+.salesbody{
+    background-image: url("img/chinook.jpg");
+}
+#CookiesShopForm{
+    font-family: inherit;
+    
+}
+#cookiesshops{
+    border: 1px solid black;
+    text-align: left;
+    padding: 15px;
+    border-collapse: collapse;
+}
